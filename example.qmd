@@ -5,8 +5,22 @@ author: "Siyuan Yin"
 ---
 
 
-<<<<<<< HEAD
 # Main branch section
-=======
 # Test branch section
->>>>>>> testbranch
+
+# ploting section
+
+```{r}
+library(readr)
+library(ggplot2)
+
+marketing_data <- read_csv("data/32876793_Siyuan Yin.csv")
+
+ggplot(marketing_data, aes(x = segment, y = purchase_amount)) +
+  geom_boxplot() +
+  labs(
+    title = "Purchase Amount by Customer Segment",
+    x = "Customer Segment",
+    y = "Purchase Amount"
+  )
+```
